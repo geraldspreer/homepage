@@ -5,54 +5,54 @@ permalink: /doctrine/
 ---
 
     <section>
-      <h1 style="margin-bottom: 0px">The Rails Doctrine</h1>
-      <p style="margin-top: 0"><small style="color: grey">By David Heinemeier Hansson in January, 2016</small></p>
+      <h1 style="margin-bottom: 0px">Die Rails-Doktrin</h1>
+      <p style="margin-top: 0"><small style="color: grey">Von David Heinemeier Hansson im Januar 2016</small></p>
 
       <figure class="right">
         <img src="/images/doctrine.png" alt="The Rails Doctrine">
       </figure>
 
-      <p>Ruby on Rails’ phenomenal rise to prominence owed much of its lift-off to novel technology and timing. But technological advantages erode over time, and good timing doesn’t sustain movements alone over the long term. So a broader explanation of how Rails has continued to not only stay relevant but to grow its impact and community is needed. I propose that the enduring enabler has been and remains its controversial doctrine.</p>
+      <p>Der phänomenale Aufstieg von Ruby on Rails war größtenteils auf neuartige Technologie und Timing zurückzuführen. Aber die technologischen Vorteile schwinden mit der Zeit, und ein gutes Timing hält Bewegungen auf lange Sicht nicht allein aufrecht. Daher ist eine umfassendere Erklärung erforderlich, wie Rails weiterhin nicht nur relevant bleibt, sondern auch seine Wirkung und Community steigert. Ich schlage vor, dass der dauerhafte Wegbereiter seine kontroverse Doktrin war und bleibt.</p>
 
-      <p>This doctrine has evolved over the past decade, but most of its strongest pillars are also the founding ones. I make no claim to the fundamental originality of these ideas. The chief accomplishment of Rails was to unite and cultivate a strong tribe around a wide set of heretical thoughts about the nature of programming and programmers.</p>
+      <p>Diese Doktrin hat sich im letzten Jahrzehnt weiterentwickelt, aber die meisten ihrer stärksten Säulen sind auch die Gründungspfeiler. Ich erhebe keinen Anspruch auf die grundsätzliche Originalität dieser Ideen. Die Hauptleistung von Rails bestand darin, einen starken Stamm um eine breite Palette ketzerischer Gedanken über die Natur des Programmierens und der Programmierer zu vereinen und zu kultivieren.</p>
 
-      <p>With all that ado, here follows the nine most important pillars of The Rails Doctrine, as perceived by yours truly:</p>
+      <p>Mit all dem Lärm folgen hier die neun wichtigsten Säulen der Rails-Doktrin, wie sie von Ihnen wirklich wahrgenommen werden:</p>
 
       <p>
         <ol>
-          <li><a href="#optimize-for-programmer-happiness">Optimize for programmer happiness</a></li>
-          <li><a href="#convention-over-configuration">Convention over Configuration</a></li>
-          <li><a href="#omakase">The menu is omakase</a></li>
-          <li><a href="#no-one-paradigm">No one paradigm</a></li>
-          <li><a href="#beautiful-code">Exalt beautiful code</a></li>
-          <li><a href="#provide-sharp-knives">Provide sharp knives</a></li>
-          <li><a href="#integrated-systems">Value integrated systems</a></li>
-          <li><a href="#progress-over-stability">Progress over stability</a></li>
-          <li><a href="#big-tent">Push up a big tent</a></li>
+          <li><a href="#optimize-for-programmer-happiness">Optimierem um die Freude des Programmierers zu vollenden</a></li>
+          <li><a href="#convention-over-configuration">Konvention über Konfiguration</a></li>
+          <li><a href="#omakase">Das Menü ist Omakase</a></li>
+          <li><a href="#no-one-paradigm">Kein Paradigma</a></li>
+          <li><a href="#beautiful-code">Loben Sie bewundernswerten Code</a></li>
+          <li><a href="#provide-sharp-knives">Stellen Sie scharfe Messer bereit</a></li>
+          <li><a href="#integrated-systems">Wertintegrierte Systeme</a></li>
+          <li><a href="#progress-over-stability">Fortschritt über Stabilität</a></li>
+          <li><a href="#big-tent">Schieben Sie ein großes Zelt hoch</a></li>
         </ol>
       </p>
 
-      <h2 id="optimize-for-programmer-happiness">Optimize for programmer happiness</h2>
+      <h2 id="optimize-for-programmer-happiness">Optimieren Sie für das Glück des Programmierers</h2>
 
-      <p>There would be no Rails without Ruby, so it's only fitting that the first doctrinal pillar is lifted straight from the core motivation for creating Ruby.</p>
+      <p>Ohne Ruby gäbe es Rails nicht, daher ist es nur passend, dass die erste Lehrsäule direkt von der Kernmotivation für die Erstellung von Ruby abgehoben wird.</p>
 
-      <p>Ruby’s original heresy was indeed to place the happiness of the programmer on a pedestal. Above many other competing and valid concerns that had driven programming languages and ecosystems before it.</p>
+      <p>Rubys ursprüngliche Häresie bestand in der Tat darin, das Glück des Programmierers auf ein Podest zu stellen. Vor vielen anderen konkurrierenden und berechtigten Bedenken, die zuvor Programmiersprachen und Ökosysteme vorangetrieben hatten.</p>
 
-      <p>Where Python might boast that there’s “one and preferably only one way to do something”, Ruby relished expressiveness and subtlety. Where Java championed forcefully protecting programmers from themselves, Ruby included a set of sharp knives in the welcome kit. Where Smalltalk drilled a purity of message passing, Ruby accumulated keywords and constructs with an almost gluttonous appetite.</p>
+      <p>Wo Python sich rühmen könnte, dass es „einen und vorzugsweise nur einen Weg gibt, etwas zu tun“, genoss Ruby Ausdruckskraft und Subtilität. Während Java sich dafür einsetzte, Programmierer gewaltsam vor sich selbst zu schützen, nahm Ruby ein Set scharfer Messer in das Begrüßungskit auf. Während Smalltalk eine Reinheit der Nachrichtenübermittlung bohrte, sammelte Ruby Schlüsselwörter und Konstrukte mit einem fast gefräßigen Appetit.</p>
 
-      <p>Ruby was different because it valued different things. And most of those things were in service of this yearning for programmer happiness. A pursuit that brought it at odds with not only most other programming environments, but also the mainstream perception of what a programmer was and how they were supposed to act.</p>
+      <p>Ruby war anders, weil es verschiedene Dinge schätzte. Und die meisten dieser Dinge dienten dieser Sehnsucht nach Programmiererglück. Ein Streben, das nicht nur den meisten anderen Programmierumgebungen widersprach, sondern auch der allgemeinen Wahrnehmung, was ein Programmierer war und wie er sich verhalten sollte.</p>
 
-      <p>Ruby took to not only recognize but accommodate and elevate programmer feelings. Whether they be of inadequacy, whimsy, or joy. Matz jumped implementational hurdles of astounding complexity to make the machine appear to smile at and flatter its human co-conspirator. Ruby is full of optical illusions where that which seems simple, clear, and beautiful to our mind’s eye actually is an acrobatic mess of wires under the hood. These choices were not free (ask the JRuby crew about trying to reverse-engineer this magical music box!), which is precisely why they’re so commendable.</p>
+      <p>Ruby musste die Gefühle der Programmierer nicht nur erkennen, sondern auch berücksichtigen und steigern. Ob sie von Unzulänglichkeit, Laune oder Freude sind. Matz übersprang Implementierungshürden von erstaunlicher Komplexität, damit die Maschine ihren menschlichen Mitverschwörer anlächelte und ihm schmeichelte. Ruby ist voller optischer Täuschungen, bei denen das, was für unser geistiges Auge einfach, klar und schön erscheint, tatsächlich ein akrobatisches Durcheinander von Drähten unter der Haube ist. Diese Entscheidungen waren nicht frei (fragen Sie die JRuby-Crew nach dem Versuch, diese magische Spieluhr rückzuentwickeln!), Und genau deshalb sind sie so lobenswert.</p>
 
-      <p>It was this dedication to an alternate vision for programming and programmers that sealed my love affair with Ruby. It wasn’t just ease of use, it wasn’t just aesthetics of blocks, it was no one single technical achievement. It was a vision. A counter culture. A place for the misfits of the existing professional programming mold to belong and associate with the like of mind.</p>
+      <p>Es war diese Hingabe an eine alternative Vision für Programmierer und Programmierer, die meine Liebesbeziehung zu Ruby besiegelte. Es war nicht nur einfach zu bedienen, es war nicht nur die Ästhetik von Blöcken, es war keine einzige technische Errungenschaft. Es war eine Vision. Eine Gegenkultur. Ein Ort, an dem die Außenseiter der bestehenden professionellen Programmierform zu Gleichgesinnten gehören und sich mit ihnen verbinden können.</p>
 
       <p>I’ve described this discovery of Ruby in the past as finding a magical glove that just fit my brain perfectly. Better than I had ever imagined any glove could ever fit. But it was even more than that. It was the event that marked my own personal transition from ‘doing programming because I needed programs’ to ‘doing programming because I fell in love with it as a mode of intellectual exercise and expression’. It was finding a <a href="http://www.amazon.com/Flow-Harper-Perennial-Modern-Classics-ebook/dp/B000W94FE6/">fountain of flow</a> and being able to turn it on at will. For anyone familiar with Csikszentmihalyi’s work, the impact of this is hard to overstate.</p>
 
       <p>I’m not exaggerating when I say that Ruby transformed me and set the course for my life’s work. So deep was the revelation. It imbued me with a calling to do missionary work in service of Matz’s creation. To help spread this profound creation and its benefits.</p>
 
-      <p>Now I can imagine most of you shaking your heads with incredulity. I don’t blame you. If someone had described the experience above to me when I was still living under the “programming is just a tool” paradigm, I too would have shook my head. And then I would probably have laughed at the over-the-top use of religious language. But for this to be a truthful account, it also has to be honest, even if that’s off-putting to some or even most.</p>
+      <p>Jetzt kann ich mir vorstellen, dass die meisten von Ihnen ungläubig den Kopf schütteln. Ich beschuldige dich nicht. Wenn mir jemand die Erfahrung oben beschrieben hätte, als ich noch unter dem Paradigma „Programmieren ist nur ein Werkzeug“ lebte, hätte auch ich den Kopf geschüttelt. Und dann hätte ich wahrscheinlich über den übertriebenen Gebrauch religiöser Sprache gelacht. Aber damit dies ein wahrheitsgemäßer Bericht ist, muss er auch ehrlich sein, auch wenn dies einige oder sogar die meisten abschreckt.</p>
 
-      <p>Anyway, what did this mean for Rails and how does this principle continue to guide its evolution? To answer that, I think it’s instructive to look at another principle that was often used to describe Ruby in the early days: The Principle of Least Surprise. Ruby should behave how you’d expect it to. This is easily described with a contrast to Python:</p>
+      <p>Was bedeutete das für Rails und wie leitet dieses Prinzip seine Entwicklung weiter? Um das zu beantworten, finde ich es lehrreich, ein anderes Prinzip zu betrachten, das in den frühen Tagen oft zur Beschreibung von Ruby verwendet wurde: Das Prinzip der geringsten Überraschung. Ruby sollte sich so verhalten, wie Sie es erwarten würden. Dies ist im Gegensatz zu Python leicht zu beschreiben:</p>
 
       <p>
         <code><pre>
@@ -66,35 +66,35 @@ permalink: /doctrine/
     Use exit() or Ctrl-D (i.e. EOF) to exit</pre></code>
       </p>
 
-      <p>Ruby accepts both exit and quit to accommodate the programmer’s obvious desire to quit its interactive console. Python, on the other hand, pedantically instructs the programmer how to properly do what’s requested, even though it obviously knows what is meant (since it’s displaying the error message). That’s a pretty clear-cut, albeit small, example of PoLS.</p>
+      <p>Ruby akzeptiert sowohl das Beenden als auch das Beenden, um dem offensichtlichen Wunsch des Programmierers Rechnung zu tragen, seine interaktive Konsole zu beenden. Python hingegen weist den Programmierer pedantisch an, wie er die angeforderten Aktionen ordnungsgemäß ausführen soll, obwohl er offensichtlich weiß, was gemeint ist (da die Fehlermeldung angezeigt wird). Das ist ein ziemlich klares, wenn auch kleines Beispiel für PoLS.</p>
 
-      <p>The reason PoLS fell out of favor with the Ruby community was that this principle is inherently subjective. Least surprising to whom? Well, to Matz. And people who are surprised in the same way as him. As the Ruby community grew, and the ratio of people who were surprised by different things than Matz grew with it, this became a source of fruitless bike-shedding on the mailing lists. So the principle faded to the background, lest to invite more debates going nowhere over whether person X was surprised by behavior Y or not.</p>
+      <p>Der Grund, warum PoLS bei der Ruby-Community in Ungnade fiel, war, dass dieses Prinzip von Natur aus subjektiv ist. Am wenigsten überraschend für wen? Nun, zu Matz. Und Menschen, die genauso überrascht sind wie er. Als die Ruby-Community wuchs und der Anteil der Menschen, die von anderen Dingen als Matz überrascht waren, mitwuchs, wurde dies zu einer Quelle fruchtlosen Fahrradabwurfs auf den Mailinglisten. Das Prinzip trat also in den Hintergrund, damit nicht mehr Debatten darüber geführt werden, ob Person X von Verhalten Y überrascht wurde oder nicht.</p>
 
-      <p>So again, what does this have to do with Rails? Well, Rails has been designed with a similar principle to Principle of Least Surprise (To Matz). The Principle of The Bigger Smile (of DHH), which is just what it says on the tin: APIs designed with great attention paid to whatever would make me smile more and broader.  When I write it out like this, that sounds almost comically narcissistic, and even I find hard to argue against that first impression.</p>
+      <p>Was hat das mit Rails zu tun? Nun, Rails wurde nach einem ähnlichen Prinzip wie das Prinzip der geringsten Überraschung (To Matz) entwickelt. Das Prinzip des größeren Lächelns (von DHH), das genau das ist, was es verspricht: APIs, die mit großer Aufmerksamkeit entwickelt wurden und auf alles achten, was mich zum Lächeln bringen würde. Wenn ich es so schreibe, klingt das fast komisch narzisstisch, und selbst ich finde es schwierig, gegen diesen ersten Eindruck zu argumentieren.</p>
 
-      <p>But creating something like Ruby or Rails is at least at its outset a deeply narcissistic endeavor. Both projects sprung from the mind of a singular creator. But perhaps I’m projecting my own motivations onto Matz here, so let me narrow the scope of my proclamation to that which I know: I created Rails for me. To make me smile, first and foremost. Its utility was to many degrees subservient to its ability to make me enjoy my life more. To enrich my daily toil of wrangling requirements and requests for web information systems.</p>
+      <p>Aber so etwas wie Ruby oder Rails zu kreieren, ist zumindest zu Beginn ein zutiefst narzisstisches Unterfangen. Beide Projekte entsprangen einem einzigartigen Schöpfer. Aber vielleicht projiziere ich hier meine eigenen Motivationen auf Matz, also lassen Sie mich den Umfang meiner Proklamation auf das beschränken, was ich weiß: Ich habe Rails für mich erstellt. Um mich in erster Linie zum Lächeln zu bringen. Sein Nutzen war in hohem Maße seiner Fähigkeit unterworfen, mich mein Leben mehr genießen zu lassen. Um meine tägliche Arbeit an Streitanforderungen und Anfragen nach Webinformationssystemen zu bereichern.</p>
 
-      <p>Like Matz, I at times went to silly lengths to serve my principle. One example is the Inflector, a class that understands just enough of the patterns and irregularities of the English language to map a Person class to a People table, Analysis to Analyses, and simply Comment to Comments. This behavior is now accepted as an unquestioned element of Rails, but the fires of controversy raged with great intensity in the early days when we were still coalescing the doctrine and its importance.</p>
+      <p>Wie Matz habe ich mich manchmal albern bemüht, meinem Prinzip zu dienen. Ein Beispiel ist der Inflector, eine Klasse, die gerade genug von den Mustern und Unregelmäßigkeiten der englischen Sprache versteht, um eine Personenklasse einer Personentabelle zuzuordnen, Analyse zu Analysen und einfach Kommentar zu Kommentaren. Dieses Verhalten wird jetzt als unbestrittenes Element von Rails akzeptiert, aber die kontroversen Feuer wüteten in den frühen Tagen, als wir die Doktrin und ihre Bedeutung noch zusammenführten, mit großer Intensität.</p>
 
-      <p>Another example that required less implementation effort, but triggered almost as much consternation: Array#second through #fifth (and #forty_two for good trolling measure). These alias accessors were deeply offensive to a very vocal constituency who decried the bloat (and near end of civilization, for good measure) of something that could as well be written as Array#[1], Array#[2] (and Array[41]).</p>
+      <p>Ein weiteres Beispiel, das weniger Implementierungsaufwand erforderte, aber fast genauso viel Bestürzung auslöste: Array # second bis #fifth (und #forty_two für eine gute Trolling-Maßnahme). Diese Alias-Accessoren waren zutiefst beleidigend für einen sehr lautstarken Wahlkreis, der das Aufblähen (und gegen Ende der Zivilisation, zum guten Teil) von etwas, das genauso gut geschrieben werden könnte wie Array # [1], Array # [2] (und Array [ 41]).</p>
 
-      <p>But both decisions still, to this day, make me smile. I relish getting to write people.third in a test case or the console. No, that’s not logical. It’s not efficient. It may even be pathological. But it continues to make me smile, thus fulfilling the principle and enriching my life, helping to justify my continued involvement with Rails after 12 years of service.</p>
+      <p>Aber beide Entscheidungen bringen mich bis heute zum Lächeln. Ich genieße es, Leute zu schreiben. Drittens in einem Testfall oder auf der Konsole. Nein, das ist nicht logisch. Es ist nicht effizient. Es kann sogar pathologisch sein. Aber es bringt mich weiterhin zum Lächeln, erfüllt das Prinzip und bereichert mein Leben. Dies trägt dazu bei, meine fortgesetzte Beschäftigung mit Rails nach 12 Dienstjahren zu rechtfertigen.</p>
 
-      <p>Unlike, say, optimizing for performance, it’s tough to measure optimizing for happiness. This makes it an almost inherently unscientific endeavor, which to some renders it less important, if not outright frustrating. Programmers are taught to argue and conquer the measurable. That which has clear conclusions and where A can categorically be shown to be better than B.</p>
+      <p>Im Gegensatz zur Optimierung der Leistung ist es schwierig, die Optimierung der Leistung zu messen. Dies macht es zu einem fast von Natur aus unwissenschaftlichen Unterfangen, das es für einige weniger wichtig, wenn nicht geradezu frustrierend macht. Programmierer lernen, das Messbare zu argumentieren und zu erobern. Das, was klare Schlussfolgerungen hat und wo A kategorisch als besser als B gezeigt werden kann.</p>
 
-      <p>But while the pursuit of happiness is hard to measure at the micro level, it’s a lot clearer to observe at the macro level. The Ruby on Rails community is full of people who are here precisely because of this pursuit. They boast of better, more fulfilled working lives. It’s in this aggregate of emotions that the victory is clear.</p>
+      <p>Während das Streben nach Glück auf Mikroebene schwer zu messen ist, ist es auf Makroebene viel klarer zu beobachten. Die Ruby on Rails-Community ist voll von Leuten, die genau wegen dieser Verfolgung hier sind. Sie rühmen sich eines besseren und erfüllteren Arbeitslebens. In dieser Ansammlung von Emotionen ist der Sieg klar.</p>
 
-      <p>So thus we conclude: Optimizing for happiness is perhaps the most formative key to Ruby on Rails. It shall remain such going forward.</p>
+      <p>Wir schließen daraus: Die Optimierung für das Glück ist vielleicht der prägendste Schlüssel zu Ruby on Rails. Dies soll auch in Zukunft so bleiben.</p>
 
-      <h2 id="convention-over-configuration">Convention over Configuration</h2>
+      <h2 id="convention-over-configuration">Konvention über Konfiguration</h2>
 
       <p>One of the early productivity mottos of Rails went: “You’re not a beautiful and unique snowflake”. It postulated that by giving up vain individuality, you can leapfrog the toils of mundane decisions, and make faster progress in areas that really matter.</p>
 
-      <p>Who cares what format your database primary keys are described by? Does it really matter whether it's “id”, “postId”, “posts_id”, or “pid”? Is this a decision that’s worthy of  recurrent deliberation? No.</p>
+      <p>Wen interessiert es, in welchem Format Ihre Datenbankprimärschlüssel beschrieben werden? Ist es wirklich wichtig, ob es sich um &quot;id&quot;, &quot;postId&quot;, &quot;posts_id&quot; oder &quot;pid&quot; handelt? Ist dies eine Entscheidung, die einer wiederholten Überlegung wert ist? Nein.</p>
 
-      <p>Part of the Rails’ mission is to swing its machete at the thick, and ever growing, jungle of recurring decisions that face developers creating information systems for the web. There are thousands of such decisions that just need to be made once, and if someone else can do it for you, all the better.</p>
+      <p>Ein Teil der Mission von Rails ist es, die Machete im dichten und ständig wachsenden Dschungel wiederkehrender Entscheidungen zu schwingen, denen Entwickler gegenüberstehen, die Informationssysteme für das Web erstellen. Es gibt Tausende solcher Entscheidungen, die nur einmal getroffen werden müssen, und wenn jemand anderes dies für Sie tun kann, umso besser.</p>
 
-      <p>Not only does the transfer of configuration to convention free us from deliberation, it also provides a lush field to grow deeper abstractions. If we can depend on a Person class mapping to people table, we can use that same inflection to map an association declared as has_many :people to look for a Person class. The power of good conventions is that they pay dividends across a wide spectrum of use.</p>
+      <p>Die Übertragung der Konfiguration auf die Konvention befreit uns nicht nur von Überlegungen, sondern bietet auch ein üppiges Feld, um tiefere Abstraktionen zu entwickeln. Wenn wir uns auf eine Personenklassenzuordnung zur Personentabelle verlassen können, können wir dieselbe Beugung verwenden, um eine als has_many: people deklarierte Zuordnung zuzuordnen, um nach einer Personenklasse zu suchen. Die Kraft guter Konventionen besteht darin, dass sie sich über ein breites Anwendungsspektrum auszahlen.</p>
 
       <p>But beyond the productivity gains for experts, conventions also lower the barriers of entry for beginners. There are so many conventions in Rails that a beginner doesn’t even need to know about, but can just benefit from in ignorance. It’s possible to create great applications without knowing why everything is the way it is.</p>
 
